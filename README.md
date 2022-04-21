@@ -10,3 +10,4 @@ The extension uses a content script, which creates a style element for the selec
 ## About us
 
 ### Developer
+The main developer is Dinoscape (so me lol). I sometimes found it annoying when I saw the standard blue color if I selected some text. So, I made a friendly extension, which allows you to change the highlight color of your browser. It's mainly developed for Chrome, but it'll probably also work in other browsers. Have fun!
