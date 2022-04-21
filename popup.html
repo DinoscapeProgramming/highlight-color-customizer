@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Color Customizer</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 1rem;
+            background-color: #ffffff;
+            min-width: 200px;
+        }
+        button[id=save] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button[id=save]:hover {
+            background-color: #45a049;
+        }
+        button[id=reset] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 13px 18.6px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button[id=reset]:hover {
+            background-color: #45a049;
+        }
+        input[type=color] {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 47.5px;
+            height: 21px;
+            margin-left: 0.06em;
+        }
+        .switch input[type=checkbox] { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 17px;
+            width: 17px;
+            left: 2.75px;
+            bottom: 1.7px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input[type=checkbox]:checked + .slider {
+            background-color: #2196F3;
+        }
+        input[type=checkbox]:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input[type=checkbox]:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(25.5px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox" id="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <h3>Background Color</h3>
+    <input id="backgroundColor" type="color" value="#3390ff">
+    <h3>Text Color</h3>
+    <input id="textColor" type="color" value="#ffffff">
+    <br>
+    <button id="save">
+        Save
+    </button>
+    <button id="reset">
+        Reset
+    </button>
+</body>
+<script src="popup.js"></script>
+</html>

@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Highlight Color Customizer",
+    "description": "Customize your highlight color easily",
+    "version": "0.1",
+    "action": {
+        "default_icon": {
+            "16": "icons/16x16.png",
+            "48": "icons/48x48.png",
+            "128": "icons/128x128.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Highlight Color Customizer"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icons/16x16.png",
+        "48": "icons/48x48.png",
+        "128": "icons/128x128.png"
+    }
+}
