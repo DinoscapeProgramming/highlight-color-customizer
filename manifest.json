@@ -3,6 +3,7 @@
     "name": "Highlight Color Customizer",
     "description": "Customize your highlight color easily",
     "version": "0.1",
+    "homepage_url": "https://github.com/DinoscapeProgramming/highlight-color-customizer",
     "action": {
         "default_icon": {
             "16": "icons/16x16.png",
